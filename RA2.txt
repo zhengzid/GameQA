@@ -1,0 +1,17 @@
+1.我的做法是兼容性选择win7，xp都行，简化16位色，高dpi禁用缩放，管理员运行都点上然后最关键的找到游戏文件夹里面的RA2.ini文件
+（尤里复仇的是RA2MD.ini）
+用右键选择 编辑 打开找到[Video]在下面加一行
+VideoBackBuffer=no
+也就是改成
+[Video]
+VideoBackBuffer=no
+ScreenWidth=1024
+ScreenHeight=768
+StretchMovies=no
+然后保存运行游戏
+2.1.从开始菜单选择“运行”——dxdiag，在弹出的窗口中选择“显示”选项，将directx中显示选项卡中的第一个加速功能禁用，应该能解决问题。只是可能会导致其他游戏不一定能玩。 要想什么游戏都能玩，可以到系统盘windows目录下的system32目录里面，查找到dxdiag这个文件，创建一个快捷方式到桌面或附加到开始菜单，要玩红警的时候禁用，玩魔兽等游戏的时候再开启。
+
+作者：知乎用户
+链接：https://www.zhihu.com/question/33679136/answer/57156305
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
